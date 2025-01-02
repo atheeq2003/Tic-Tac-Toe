@@ -34,7 +34,7 @@ body {
     box-shadow: 0.5rem 0.5rem 0 #FFBC42;
     background-color: #F2F3AE;
     font-size: 8vmin;
-    
+
 }
 
 #reset-btn {
@@ -44,4 +44,30 @@ body {
     color:black;
     border-radius: 1rem;
     border: 1px solid black;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #FFBC42;
+    color:black;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+#msg {
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
 }
