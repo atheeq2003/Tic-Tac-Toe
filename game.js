@@ -24,9 +24,11 @@ grids.forEach((grid) => {
   grid.addEventListener("click", () => {
     if (turnO == true) {
       grid.innerText = "O";
+      grid.style.color = "#3498DB";
       turnO = false;
     } else {
       grid.innerText = "X";
+      grid.style.color = "#FF5733";
       turnO = true;
     }
     grid.disabled = true;
@@ -65,6 +67,7 @@ const checkWinner = () => {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         showWinner(pos1Val);
         disableGrids();
+        return true;
       }
     }
   }
